@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SCRIPT JS -->
+    <script src="./assets/scripts/card-hover.js"></script>
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- STYLES CSS -->
+    <link rel="stylesheet" href="./assets/css/reset_css.css" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+
+    <title>Spider-man</title>
+  </head>
+  <body>
+    <nav class="s-menu">
+      <ul>
+        <li class="s-menu-item">
+          <a href="/">Página Inicial</a>
+        </li>
+
+        <li class="s-menu-item">
+          <a href="#">Tobey Maguire</a>
+        </li>
+
+        <li class="s-menu-item s-menu-icon">
+          <img src="./assets/images/icons/spider.svg" alt="spider-man icon" />
+        </li>
+
+        <li class="s-menu-item">
+          <a href="#">Tom Holland</a>
+        </li>
+
+        <li class="s-menu-item">
+          <a href="#">Andrew Garfield</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="s-container">
+      <div
+        class="s-cards-carousel"
+        style="transform: translateZ(-40vw) rotateY(0deg)"
+      >
+        <a id="spider-man-01" href="#" class="s-card">
+          <img
+            class="s-card-background"
+            src="/assets/images/pic-sm-bg-01.jpg"
+            alt=""
+          />
+          <img
+            class="s-card-image"
+            src="/assets/images/spider-man-01.png"
+            alt="Tobey Maguire"
+          />
+          <h2 class="s-card-title">Tobey Maguire</h2>
+        </a>
+
+        <a id="spider-man-02" href="#" class="s-card">
+          <img
+            class="s-card-background"
+            src="/assets/images/pic-sm-bg-02.jpg"
+            alt=""
+          />
+          <img
+            class="s-card-image"
+            src="/assets/images/spider-man-02.png"
+            alt="Tom Holland"
+          />
+          <h2 class="s-card-title">Tom Holland</h2>
+        </a>
+
+        <a id="spider-man-03" href="#" class="s-card">
+          <img
+            class="s-card-background"
+            src="/assets/images/pic-sm-bg-03.jpg"
+            alt=""
+          />
+          <img
+            class="s-card-image"
+            src="/assets/images/spider-man-03.png"
+            alt="Andrew Garfiel"
+          />
+          <h2 class="s-card-title">Andrew Garfiel</h2>
+        </a>
+      </div>
+    </div>
+
+    <div class="s-controller">
+      <div
+        id="1"
+        onclick="selectCarouselItem(this)"
+        class="s-controller-button button-active"
+      >
+        01
+      </div>
+      <div
+        id="2"
+        onclick="selectCarouselItem(this)"
+        class="s-controller-button"
+      >
+        02
+      </div>
+      <div
+        id="3"
+        onclick="selectCarouselItem(this)"
+        class="s-controller-button"
+      >
+        03
+      </div>
+      <div class="s-controller-line"></div>
+    </div>
+  </body>
+</html>
