@@ -1,15 +1,18 @@
 .gallery {
-  padding: 20px;
+  padding: 2rem;
   padding-left: 0;
+
 }
 
 .gallery ul {
   display: flex;
-  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .gallery ul li{
-  margin-left: 25px;
+  margin-left: 1.5rem;
+
 }
 
 .gallery ul li:first-child{
@@ -17,6 +20,10 @@
 }
 
 .gallery ul li a img{
+
+  width: 25rem;
+  height: auto;
+  size-adjust: cover;
   border: solid 6px white;
   border-radius: 15px;
 
