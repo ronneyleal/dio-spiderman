@@ -11,14 +11,6 @@
   margin: 7rem 0;
 }
 
-.navigator ul li:first-child {
-  margin-top: 0;
-}
-
-.navigator ul li:last-child {
-  margin-bottom: 0;
-}
-
 .navigator ul li a {
   color: white;
   border: 2px solid white;
