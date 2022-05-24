@@ -1,9 +1,9 @@
 @import url('reset_css.css');
 @import url('global.css');
-@import url('components/_navigator.css');
-@import url('components/_pills.css');
-@import url('components/_link-button.css');
-@import url('components/_gallery.css');
+@import url('./components/gallery.css');
+@import url('./components/pills.css');
+@import url('./components/link-button.css');
+@import url('./components/navigator.css');
 
 body 
 { 
@@ -140,137 +140,5 @@ justify-content: flex-start;
 
 
  /* spiderman animation  */
-
-
-
-/* ------large devices 1023 > */
-@media screen and (max-width: 992px) {
-  .s-wrapper .s-main-content .s-logo img {
-    max-width: 30%;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-  .s-wrapper .s-main-content-top .s-description {
-    background-color: rgba(0,0,0,.7);
-    padding: 0.3rem;
-    border-radius: 5px;
-  }
-  .s-wrapper .s-main-content-top .s-description .s-description-text p, strong{
-    
-    font-size: 0.6rem;
-    color: white;
-    line-height: 170%;
-  }
-
-  .s-wrapper .s-main-content-top .s-description .pills {
-    margin-bottom: .1rem;
-  }
-  .s-wrapper .s-main-content-top .s-description .pills ul li {
-    margin-bottom: .5rem;
-    font-size: .6rem;
-  }
-  
-  .s-wrapper .s-main-content .s-links {
-    padding: .5rem;
-  }
-
-  .gallery{
-    padding: 0;
-  }
-
-  .gallery ul li{
-    margin-left: .5rem;
-    }
-
-    .gallery ul li a img{
-      width: 7rem;
-      height: auto;
-      size-adjust: cover;
-      border: solid 1px white;
-      border-radius: 5px;
-    
-    }
-    .s-wrapper video {
-      position: absolute;
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-    }
-
-    a.link-button .icon {
-      width: 15px;
-      height: 15px;
-      padding: 1px;
-      border: solid 1px white;
-    }
-    
-    a.link-button .icon .play-icon {
-      border: solid 5px white;
-      width: 0;
-      height: 0;
-      border-top-color: transparent;
-      border-right-color: transparent;
-      border-bottom-color: transparent;
-      margin-right: -7px;
-    
-    }
-    
-    a.link-button .label {
-      margin-left: 0.5rem;
-      font-size: 0.6rem;
-    }
-
-    .s-wrapper .s-left-column {
-      width: 3rem;
-      height: 100%;
-      padding-right: .5rem;
-      }
-
-      .s-wrapper .s-main-content {
-        padding-left: 3rem;
-      }
-
-      .navigator ul li {
-        margin: 1rem;
-      }
-
-      .navigator ul li a {
-        width: 20px;
-        height: 20px;
-        font-size: 0.4rem;
-      }
-      
-      #home {
-      width: 20px;
-      height: 20px;
-      font-size: 0.4rem;
-     }
-      
-      .navigator::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        width: 2px;
-        height: 100%;
-        background-color: white;
-        z-index: 0;
-      }
-
-      .navigator .navigator-icon img {
-        width: 30px;
-        top: -20px;
-      }
-}
-
-
-/*------large devices 992 > */
-/* @media (min-width: 992px) {
-  :root {
-    --title-font-size: 2.25rem;
-    --subtitle-font-size:1.125rem;
-  }
- } */
  
- /*------medium devices 767 > */
 
- 
